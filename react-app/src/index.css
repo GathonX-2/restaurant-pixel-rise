@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0b1221;
+  --panel: #0f172a;
+  --accent: #f8d27b;
+  --accent-2: #f97316;
+  --muted: #9fb1d1;
+}
+
+body {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  @apply bg-slate-950 text-slate-100 antialiased min-h-screen;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(248, 210, 123, 0.14), transparent 32%),
+    radial-gradient(circle at 82% 18%, rgba(124, 145, 255, 0.18), transparent 28%),
+    radial-gradient(120% 120% at 50% 120%, rgba(32, 54, 105, 0.65), transparent 40%);
+  background-attachment: fixed;
+}
+
+.hero-overlay {
+  background: linear-gradient(120deg, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.35));
+}
+
+.glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur-md;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  @apply text-3xl md:text-4xl font-semibold tracking-tight text-white;
+}
+
+.section-subtitle {
+  @apply uppercase text-[11px] font-semibold tracking-[0.32em] text-amber-200;
+}
+
+.card {
+  @apply glass rounded-3xl p-6 shadow-xl shadow-black/50;
+}
+
+.button-primary {
+  @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-300 to-orange-500 text-slate-950 font-semibold shadow-lg shadow-orange-500/25 transition hover:-translate-y-0.5 hover:shadow-orange-500/35;
+}
+
+.button-ghost {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-slate-100 font-semibold transition hover:border-amber-300 hover:text-amber-200 hover:bg-white/5;
+}
+
+.pill {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-100;
+}
+
+.floating-card {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}

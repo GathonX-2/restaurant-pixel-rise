@@ -1,0 +1,134 @@
+/*#####################################################################################
+# Bloc 2
+#####################################################################################*/
+.custom-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.custom-card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    /* Overlay semi-transparent noir */
+}
+
+.custom-card:hover .custom-card-img-overlay {
+    opacity: 1;
+    /* Affiche l'overlay au survol */
+}
+
+.custom-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover img {
+    transform: scale(1.1);
+    /* Zoom léger de l'image au survol */
+}
+
+.custom-overlay-hover h4,
+.custom-overlay-hover p {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.custom-card:hover .custom-overlay-hover h4,
+.custom-card:hover .custom-overlay-hover p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*#####################################################################################
+#  Bloc 5
+#####################################################################################*/
+/* Effet de zoom et overlay */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+    /* Zoom au survol */
+    filter: brightness(70%);
+    /* Assombrir légèrement l'image */
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Couleur semi-transparente pour le fond */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    /* Affiche l'overlay au survol */
+}
+
+.gallery-overlay h5 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: transform 0.4s ease;
+    transform: translateY(20px);
+}
+
+.gallery-item:hover .gallery-overlay h5 {
+    transform: translateY(0);
+    /* Animation de montée du texte */
+}
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
+
+/*#####################################################################################
+# 
+#####################################################################################*/
